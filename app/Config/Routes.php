@@ -5,6 +5,9 @@ use CodeIgniter\Router\RouteCollection;
 /** @var RouteCollection $routes */
 $routes->get('/', 'Home::index');
 
+/**Dashboard*/
+$routes->get('dashboard', 'Dashboard::index');
+
 /** Cidade Routes */
 $routes->get('/cidade', 'CidadeController::index');
 $routes->get('/cidade/novo', 'CidadeController::novo');
