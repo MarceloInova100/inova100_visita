@@ -36,7 +36,6 @@ $routes->get('visita/excluir/(:num)', 'VisitaController::excluir/$1');
 
 
 // Pessoa
-
 $routes->get('pessoa', 'PessoaController::index');
 $routes->get('pessoa/novo', 'PessoaController::novo');
 $routes->post('pessoa/salvar', 'PessoaController::salvar');
