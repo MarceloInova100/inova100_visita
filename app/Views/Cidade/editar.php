@@ -48,50 +48,50 @@
 <body>
     <h1>Editar Produtor</h1>
 
-<?php if (!isset($produtor) || empty($produtor)): ?>
+        <?php if (!isset($produtor) || empty($produtor)): ?>
 
-    <p>Produtor não encontrado.</p>
+            <p>Produtor não encontrado.</p>
 
-<?php else: ?>
+        <?php else: ?>
 
-<form action="<?= site_url('produtor/atualizar/'.$produtor['id']) ?>" method="post">
+        <form action="<?= site_url('produtor/atualizar/'.$produtor['id']) ?>" method="post">
 
-    <p>
-        <label>Nome</label><br>
-        <input
-            type="text"
-            name="nome"
-            value="<?= esc($produtor['nome']) ?>"
-            required
-        >
-    </p>
+            <p>
+                <label>Nome</label><br>
+                <input
+                    type="text"
+                    name="nome"
+                    value="<?= esc($produtor['nome']) ?>"
+                    required
+                >
+            </p>
 
-    <p>
-        <label>CPF</label><br>
-        <input
-            type="text"
-            name="cpf"
-            value="<?= esc($produtor['cpf'] ?? '') ?>"
-        >
-    </p>
+            <p>
+                <label>CPF</label><br>
+                <input
+                    type="text"
+                    name="cpf"
+                    value="<?= esc($produtor['cpf'] ?? '') ?>"
+                >
+            </p>
 
-    <p>
-        <label>Telefone</label><br>
-        <input
-            type="text"
-            name="telefone"
-            value="<?= esc($produtor['telefone'] ?? '') ?>"
-        >
-    </p>
+            <p>
+                <label>Telefone</label><br>
+                <input
+                    type="text"
+                    name="telefone"
+                    value="<?= esc($produtor['telefone'] ?? '') ?>"
+                >
+            </p>
 
-    <button type="submit">Atualizar</button>
+            <button type="submit">Atualizar</button>
 
-</form>
+        </form>
 
-<?php endif; ?>
+        <?php endif; ?>
 
-<p>
-    <a href="<?= site_url('produtor') ?>">Voltar</a>
-</p>
-</body>
+        <p>
+            <a href="<?= site_url('produtor') ?>">Voltar</a>
+        </p>
+    </body>
 </html>
