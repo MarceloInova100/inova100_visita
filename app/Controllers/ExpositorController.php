@@ -55,5 +55,4 @@ protected $expositorModel;
 
         return redirect()->to('/expositor');
     }
-
 }
